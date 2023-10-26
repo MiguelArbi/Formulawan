@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        /*Color de la cabecera*/
+        .navbar-custom {
+            background-color: #ff8000; 
+        }
+
+        /*Color del texto de la cabecera*/
+        .navbar-custom .navbar-nav .nav-link {
+            color: #ffffff; 
+            font-weight: bold; 
+        }
+
+        /*Margen de los cuadros*/
+        .custom-margin {
+            margin-left: 15px; 
+            margin-right: 15px; 
+        }
+
+        /*Estilo para los títulos encima de los cuadros*/
+        .box-title {
+            color: #000000; 
+            font-weight: bold; 
+        }
+
+        /*Margen de los cuadros*/
+        .classification-box {
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            margin-bottom: 15px; 
+            background-color: #f7f7f7; 
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        /*Ajustes para equilibrar el contenido de la clasificación*/
+        .classification-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .classification-box li {
+            margin-bottom: 8px;
+        }
+
+        /*Estilo para los recuadros de notícias*/
+        .additional-box {
+            border: 1px solid #ddd; 
+            padding: 15px; 
+            background-color: #f7f7f7; 
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <!-- Por ejemplo: <img src="ruta_del_logo" alt="Logo"> -->
+                Aquí va el logo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#classification">Clasificación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#circuit">Circuito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">Noticias</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid custom-margin px-4 mx-auto">
+        <div id="classification" class="row no-gutters">
+            <div class="col-md-4">
+                <div class="card classification-box">
+                    <div class="card-body">
+                        <h5 class="box-title">Clasificación</h5>
+                        <ul>
+                            <li>1º Max Verstappen - 433 puntos</li>
+                            <li>2º Sergio Pérez - 224 puntos</li>
+                            <li>3º Lewis Hamilton - 194 puntos</li>
+                            <li>4º Fernando Alonso - 183 puntos</li>
+                            <li>5º Carlos Sainz - 153 puntos</li>
+                            <li>6º Charles Leclerc - 145 puntos</li>
+                            <li>7º Lando Norris - 136 puntos</li>
+                            <li>8º George Russell - 132 puntos</li>
+                            <li>9º Oscar Piastri - 83 puntos</li>
+                            <li>10º Lance Stroll - 47 puntos</li>
+                            <li>11º Pierre Gasly - 46 puntos</li>
+                            <li>12º Esteban Ocon - 44 puntos</li>
+                            <li>13º Alexander Albon - 23 puntos</li>
+                            <li>14º Valtteri Bottas - 10 puntos</li>
+                            <li>15º Nico Hulkenberg - 9 puntos</li>
+                            <li>16º Guanyu Zhou - 6 puntos</li>
+                            <li>17º Yuki Tsunoda - 3 puntos</li>
+                            <li>18º Kevin Magnussen - 3 puntos</li>
+                            <li>19º Liam Lawson - 2 puntos</li>
+                            <li>20º Logan Sargeant - 0 puntos</li>
+                            <li>21º Nyck de Vries - 0 puntos</li>
+                            <li>22º Daniel Ricciardo - 0 puntos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card classification-box">
+                    <div class="card-body">
+                        <h5 class="box-title">Circuito</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="news" class="row">
+            <div class="col-md-12">
+                <div class="card additional-box">
+                    <div class="card-body">
+                        <h5 class="box-title">Noticias</h5>
+                        
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imatges/" class="d-block w-100" alt="Imagen 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagen2.jpg" class="d-block w-100" alt="Imagen 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagen3.jpg" class="d-block w-100" alt="Imagen 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-GLhlTQ8iKVAqWPh4jX6LCBStD2UnbrIIjx6Ix/1OWOsEdB+OJUqD2Jk9aVRbY" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
